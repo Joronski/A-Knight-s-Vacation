@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(/img/background/gamebackground.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  height: calc(100vh - 60px);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main p {
+  width: 700px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 70px;
+}
+
+main span {
+  font-size: 27px;
+}
+
+main button {
+  width: 120px;
+  height: 60px;
+  font-size: 27px;
+  margin-top: 30px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+main button:hover {
+  animation-duration: 0.5s;
+  transition: 300ms;
+  color: #fff;
+  background-color: #000;
+}
+
+main .copyright {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(#00ff73 0%, #25af6f);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(#529b73 0%, #2f865e);
+}
+
+/* For screen sizes smaller than 600px */
+@media (max-width: 600px) {
+  main p {
+    font-size: 40px;
+    width: 90%;
+  }
+  
+  main span {
+    font-size: 20px;
+  }
+  
+  main button {
+    font-size: 20px;
+  }
+
+  main .copyright {
+    font-size: 20px;
+  }
+}
+
+/* For screen sizes between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  main p {
+    font-size: 60px;
+    width: 80%;
+  }
+  
+  main span {
+    font-size: 25px;
+  }
+  
+  main button {
+    font-size: 25px;
+  }
+
+  main .copyright {
+    font-size: 25px;
+  }
+}
+
+/* For screen sizes larger than 900px */
+@media (min-width: 900px) {
+  main p {
+    font-size: 90px;
+    width: 700px;
+  }
+  
+  main span {
+    font-size: 27px;
+  }
+  
+  main button {
+    font-size: 27px;
+  }
+
+  main .copyright {
+    font-size: 27px;
+  }
+}
